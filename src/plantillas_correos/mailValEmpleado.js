@@ -2,8 +2,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-/** htmlEmail es una plantilla html que es un diseño para el correo que le llegara
-    al Empleado para validarse, esto incluye el link que debe clickear */
+
     export const htmlEmail = (validarEmpleado) => {
         const html = `
           <!DOCTYPE html>

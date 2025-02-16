@@ -163,11 +163,7 @@ export class ProductosControlador {
           console.log(error);
         });
 
-      // return res.status(201).json({
-      //   status: "ok",
-      //   numero: 1,
-      //   message: "Producto actualizado...",
-      // });
+      
     } catch (error) {
       console.log("Error, al actualizar producto: " + error);
       return res.status(500).json({

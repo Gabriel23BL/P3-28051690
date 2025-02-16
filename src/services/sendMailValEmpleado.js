@@ -4,25 +4,6 @@ import { htmlEmailCambiarClave } from "../plantillas_correos/mailCambiarClave.js
 import { htmlEmail } from "../plantillas_correos/mailValEmpleado.js";
 dotenv.config();
 
-/**
-const transporte = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.CORREO_REMITENTE,
-    pass: process.env.PASSWORD_REMITENTE,
-  },
-});
-
-export async function sendMail(correo, nombre, validarUsuario) {
-  const info = await transporte.sendMail({
-    from: `${process.env.NOMBRE_REMITENTE} <${process.env.CORREO_REMITENTE}>`,
-    to: `${correo}`,
-    subject: `Hola ${nombre}, bienvenido a Nutrivida...`,
-    html: `${htmlEmail(validarUsuario)}`,
-  });
-  return info;
-}
-*/
 
 /** La const transporte es la encargada de hacer la conexion con mailtrap, la
  cual es un simulador para enviar correos */

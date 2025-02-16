@@ -85,16 +85,7 @@ export function validarCampos(req) {
       };
     }
 
-   /**  
-    const claveValida = claveRegex.test(claveUno);
-    if (!claveValida) {
-      return {
-        status: "error",
-        numero: 0,
-        message: "Formato de clave invalida...",
-      };
-    }
-  */
+  
 
   return {
     status: "ok",
