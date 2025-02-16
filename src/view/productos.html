@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="/img/favicon.ico" rel="shortcut icon" />
+    <title>Gori-Productos</title>
+    <!--botstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/productos.css" />
+    <!--
+    <script src="https://cdn.tailwindcss.com"></script>-->
+    <script src="/js/index.js" type="module"></script>
+  </head>
+  <body>  
+
+    <!--Barra-->
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid py-3 d-flex flex-row">
+         <a class="navbar-brand text-xl-center" href="/index"><b>Gori</b><i class="bi bi-cart-dash">Shop</i></a>
+        
+         <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+    
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav flex-column flex-md-row justify-content-between align-items-center w-100">
+
+
+              <li>
+               <a class="dropdown-item" href="/login">Iniciar sesión</a>
+              </li>
+
+              <li>
+               <a class="dropdown-item" href="/registro-cliente">Registrar</a>
+              </li>
+
+              <li>
+               <a id="carrito" class="dropdown-item" href="/Comprar"> <i class="bi bi-cart-dash">Comprar</i><span></span></a>
+              </li>
+          </ul>
+    
+          <form class="d-flex ms-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar equipos" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+  </nav>
+
+    <!--Presentacion-->
+      <div class="container-fluid bg-light py-5">
+        <h2 class="text-center"><b>Gori</b><i class="bi bi-cart-dash">Shop</i> Catalogo  </h2>
+        <p class="text-center">
+          Aqui te traemos desde lo mas basico hasta lo mas avanzado en tecnologia, aquiere tus equipos con nosotros. 
+        </p>
+      </div>
+
+  <div id="contenedor">
+    <!--categoria G-Alta-->
+    <div id="G-Alta" class="container mb-5 mt-5">
+        <h4>Gama Alta</h4>
+          <p>En esta categorias encotraras equipos que te ofrecen lo ultimo en tecnologia, caracteristicas y rendimientos.</p>
+           <div class="card-group">
+
+              <!--producto 1-->
+                <div class="card px-5 ">
+                  <img src="../../img/equipos/zte-nubia-red-magic-9s-pro-plus.png" class="card-img-top mt-5" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Nubia Red Magic 9S Pro+</h5>
+                    <!--Caracteristicas-->
+                      <div>
+                       <i class="bi bi-memory"> 16GB</i>
+                      </div>
+
+                      <div>
+                       <i class="bi bi-device-hdd"> 512GB</i>
+                      </div>
+
+                      <div>
+                       <i class="bi bi-display"> 6.8", 1116 x 2480 pixels</i>
+                      </div>
+
+                      <div>
+                       <i class="bi bi-cpu"> Snapdragon 8 Gen 3 Leading 3.4GHz</i>
+                      </div>
+
+                      <div>
+                       <i class="bi bi-battery-full"> 5500 mAh</i>
+                      </div>
+
+                      <div>
+                       <i class="bi bi-camera"> Triple, 50MP+50MP+2MP</i>
+                      </div>
+                  </div>
+                  <div class="text-center">
+                    <h4> 1020 $</h4>
+                  </div>
+                      <div class="text-center mt-5 mb-5" >
+                       <a href="/login" class="btn btn-success btn-lg"><i class="bi bi-cart-dash">Comprar</i></a>
+                      </div>
+                </div>  
+                
+
+              <!--producto 2-->
+                <div class="card px-5 ">
+                   <img src="../../img/equipos/samsung-galaxy-s25-ultra.png" class="card-img-top mt-5" alt="...">
+                   <div class="card-body">
+                     <h5 class="card-title">Samsung Galaxy S25 Ultra</h5>
+                     <!--Caracteristicas-->
+                        <div>
+                         <i class="bi bi-memory"> 12GB</i>
+                        </div>
+
+                        <div>
+                         <i class="bi bi-device-hdd"> 512GB</i>
+                        </div>
+
+                        <div>
+                         <i class="bi bi-display"> 6.9", 1440 x 3120 pixels</i>
+                        </div>
+
+                        <div>
+                         <i class="bi bi-cpu"> Snapdragon 8 Elite for Galaxy 4.47GHz</i>
+                        </div>
+
+                        <div>
+                         <i class="bi bi-battery-full"> 5000 mAh</i>
+                        </div>
+
+                        <div>
+                         <i class="bi bi-camera"> Cuádruple, 50MP+50MP +50MP+50MP</i>
+                        </div>
+                   </div>
+                   <div class="text-center">
+                    <h4> 1299 $</h4>
+                  </div>
+                        <div class="text-center mt-5 mb-5" >
+                         <a href="/login" class="btn btn-success btn-lg"><i class="bi bi-cart-dash">Comprar</i></a>
+                        </div>
+                </div>
+                
+
+              <!--producto 3-->
+            <div class="card px-5">
+                  <img src="../../img/equipos/apple-iphone-16-pro-max.png" class="card-img-top mt-5" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Apple iPhone 16 Pro Max</h5>
+                    <!--Caracteristicas-->
+                      <div>
+                        <i class="bi bi-memory"> 8GB</i>
+                      </div>
+
+                      <div>
+                        <i class="bi bi-device-hdd"> 512GB</i>
+                      </div>
+
+                      <div>
+                        <i class="bi bi-display"> 6.9", 1320 x 2868 pixels</i>
+                      </div>
+
+                      <div>
+                        <i class="bi bi-cpu"> Apple A18 Pro</i>
+                      </div>
+
+                      <div>
+                        <i class="bi bi-battery-full"> 4685 mAh</i>
+                      </div>
+
+                      <div>
+                        <i class="bi bi-camera"> Cuádruple, 48MP+48MP +12MP+ToF</i>
+                      </div>
+                 </div>
+                 <div class="text-center">
+                  <h4>1220 $</h4>
+                </div>
+                      <div class="text-center mt-5 mb-5" >
+                       <a href="/login" class="btn btn-success btn-lg"><i class="bi bi-cart-dash">Comprar</i></a>
+                      </div>
+              </div>
+           </div>
+    </div>
+    
+    <!--categoria G-Media-->
+    <div id="G-Media" class="container mb-5 mt-5">
+     <h4>Gama Media</h4>
+      <p>En esta categoria encotraras equipos que ofrecen un equilibrio entre rendimiento, caracteristicas y precio.</p>
+          <div class="card-group">
+
+            <!--producto 1-->
+            <div class="card px-5">
+              <img src="../../img/equipos/infinix-hot-40i-big.png" class="card-img-top mt-5" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Infinix Hot 40i</h5>
+               <!--Caracteristicas-->
+                  <div>
+                   <i class="bi bi-memory"> 8GB</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-device-hdd"> 256GB</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-display"> 6.56", 720x1612 pixels</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-cpu"> Unisoc Tiger T606</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-battery-full"> 5000 mAh</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-camera"> Dual, 50MP+0.08MP</i>
+                  </div>    
+             </div> 
+                  <div class="text-center">
+                   <h4> 155 $</h4>
+                  </div>
+                  <div class="text-center mt-5 mb-5">
+                   <a href="/login" class="btn btn-success btn-lg"><i class="bi bi-cart-dash">Comprar</i></a>
+                  </div>
+
+            </div>  
+            
+
+            <!--producto 2--> 
+            <div class="card px-5">
+               <img src="../../img/equipos/samsung_galaxy-a55-5g-big.png" class="card-img-top mt-5 alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Samsung Galaxy A55</h5>
+                <!--Caracteristicas-->
+                 <div>
+                    <i class="bi bi-memory"> 12GB</i>
+                  </div>
+
+                  <div>
+                    <i class="bi bi-device-hdd"> 256GB</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-display"> 6.6", 1080 x 2340 pixels</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-cpu">	Exynos 1380 2.7GHz</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-battery-full"> 5000 mAh</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-camera"> Triple, 50MP+12MP+5MP</i>
+                  </div>
+              </div>
+                  <div class="text-center">
+                    <h4> 270 $</h4>
+                  </div>
+                  <div class="text-center mt-5 mb-5">
+                   <a href="/login" class="btn btn-success btn-lg"><i class="bi bi-cart-dash">Comprar</i></a>
+                  </div>
+            </div>    
+          
+         
+            <!--producto 3-->
+            <div class="card px-5">
+               <img src="../../img/equipos/redmi-note-13-pro-big.png" class="card-img-top mt-5 alt="...">
+               <div class="card-body">
+                  <h5 class="card-title">Xiaomi Redmi note 13 pro</h5>
+                  <!--Caracteristicas-->
+                    <div>
+                     <i class="bi bi-memory"> 8GB</i>
+                    </div>
+
+                    <div>
+                     <i class="bi bi-device-hdd"> 256GB</i>
+                    </div>
+
+                    <div>
+                      <i class="bi bi-display"> 6.67", 1080 x 2400 pixels</i>
+                    </div>
+
+                    <div>
+                     <i class="bi bi-cpu"> Mediatek Helio G99-Ultra 2.2GHz</i>
+                    </div>
+
+                    <div>
+                      <i class="bi bi-battery-full"> 5000 mAh</i>
+                    </div>
+
+                    <div>
+                     <i class="bi bi-camera"> Triple, 200MP+8MP+2MP</i>
+                    </div>
+               </div>
+               <div class="text-center">
+                <h4> 200 $</h4>
+              </div>
+           <div class="text-center mt-5 mb-5">
+                      <a href="/login" class="btn btn-success btn-lg"><i class="bi bi-cart-dash">Comprar</i></a>
+                    </div>
+            </div>
+            
+         </div>
+    </div>
+
+    <!--categoria G-Baja-->
+    <div id="G-Baja" class="container mb-5 mt-5 ">
+       <h4>Gama Baja</h4>
+       <p>En esta categoria encotraras equipos que aunque no tienen el mejor rendimiento cumplen con las actividades diarias y a un precio batante accesible.</p>
+          <div class="card-group">
+
+            <!--producto 1--> 
+            <div class="card px-5">
+                <img src="../../img/equipos/xiaomi-redmi-12.png" class="card-img-top mt-5" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Xiaomi Redmi 12</h5>
+                 <!--Caracteristicas-->
+                   <div>
+                     <i class="bi bi-memory">	4GB</i>
+                   </div>
+
+                   <div>
+                     <i class="bi bi-device-hdd"> 128GB</i>
+                   </div>
+
+                   <div>
+                     <i class="bi bi-display"> 6.79", 1080 x 2460 pixels</i>
+                   </div>
+
+                   <div>
+                     <i class="bi bi-cpu"> Mediatek Helio G88 2GHz</i>
+                   </div>
+
+                   <div>
+                     <i class="bi bi-battery-full"> 5000 mAh</i>
+                   </div>
+
+                   <div>
+                     <i class="bi bi-camera">	Triple, 50MP+8MP+2MP</i>
+                    </div>    
+               </div> 
+                    <div class="text-center">
+                     <h4> 115 $</h4>
+                    </div> 
+                    <div class="text-center mt-5 mb-5">
+                     <a href="/login" class="btn btn-success btn-lg"><i class="bi bi-cart-dash">Comprar</i></a>
+                    </div>
+            </div>
+          
+
+            <!--producto 2-->
+            <div class="card px-5">
+               <img src="../../img/equipos/tecno-spark-20c.png" class="card-img-top mt-5" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tecno Spark 20C</h5>
+                 <!--Caracteristicas-->
+                
+                  <div>
+                   <i class="bi bi-memory"> 4GB</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-device-hdd"> 128GB</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-display"> 6.6", 720 x 1612 pixels</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-cpu"> Octa-core 2.2GHz</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-battery-full"> 5000 mAh</i>
+                  </div>
+
+                  <div>
+                   <i class="bi bi-camera"> Dual, 50MP+0.08MP</i>
+                  </div>
+             </div>
+             <div class="text-center">
+              <h4> 100 $</h4>
+             </div>
+             <div class="text-center mt-5 mb-5">
+               <a href="/login" class="btn btn-success btn-lg"><i class="bi bi-cart-dash">Comprar</i></a>
+             </div>
+            </div>
+            
+    
+            <!--producto 3-->      
+            <div class="card px-5">
+               <img src="../../img/equipos/samsung a16gb.png" class="card-img-top mt-5" alt="...">
+              <div class="card-body">
+                 <h5 class="card-title">Samsung Galaxy A16</h5>
+                 <!--Caracteristicas-->
+                  <div>
+                    <i class="bi bi-memory"> 4GB </i>
+                  </div>
+
+                  <div>
+                    <i class="bi bi-device-hdd"> 128GB</i>
+                  </div>
+
+                  <div>
+                    <i class="bi bi-display"> 6.7", 1080 x 2340 pixels</i>
+                  </div>
+
+                  <div>
+                    <i class="bi bi-cpu"> Mediatek Helio G99 2.2GHz</i>
+                  </div>
+
+                  <div>
+                    <i class="bi bi-battery-full"> 5000 mAh</i>
+                  </div>
+
+                  <div>
+                    <i class="bi bi-camera"> Triple, 50MP+5MP +2MP</i>
+                  </div>  
+             </div>
+             <div class="text-center">
+              <h4> 160 $</h4>
+             </div>
+                  <div class="text-center mt-5 mb-5">
+                   <a href="/login" class="btn btn-success btn-lg"><i class="bi bi-cart-dash">Comprar</i></a>
+                  </div>
+            </div>
+       </div>
+    </div> 
+  </div>
+
+<!--pie-->
+<footer>
+    <div class="container-fluid py-4">
+        <div class="row">
+         <div class="text-center ">
+           <h2><b>Gori</b><i class="bi bi-cart-dash">Shop</i> </h2>
+           <p>Contactanos y visita nuestras redes sociales</p>
+         </div>
+  
+         <!--columnas pie-->
+          <div class="col-md-6 text-center">
+            <div><h4>Contactos</h4></div>
+            <div>
+              <i class="bi bi-whatsapp"></i><a class="text-decoration-none" href=""> +58 000-000.00.00</a>
+           </div>
+           <div>
+            <i class="bi bi-telegram"></i><a class="text-decoration-none" href=""> +58 000-000.00.00</a>
+           </div> 
+  
+          </div>
+  
+          <div class="col-md-6 text-center">
+            <div><h4>Redes Sociales</h4></div>
+            <div>
+              <i class="bi bi-facebook"></i><a class="text-decoration-none" href=""> Gori-Shop</a>
+            </div> 
+            <div>
+              <i class="bi bi-instagram"></i><a class="text-decoration-none" href=""> @Gori-Shop</a>
+            </div>
+          </div>
+  
+          </div>
+          <p class="text-center">©2025 Gori-Shop</p>
+      </div>
+</footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

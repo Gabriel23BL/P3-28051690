@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="/img/favicon.ico" rel="shortcut icon" />
+    <title>Gori-Gestion</title>
+    <!--botstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/productos.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!--
+    <script src="https://cdn.tailwindcss.com"></script>-->
+    <script src="/js/index.js" type="module"></script>
+    <script src="js/comprar.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <!--Barra-->
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid py-3 d-flex flex-row">
+          <a class="navbar-brand text-xl-center" href="/comprar-productos">
+            <b>Gori</b>
+            <i class="bi bi-cart-dash">Shop</i>
+          </a>
+
+          <button
+            class="navbar-toggler d-md-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul
+              class="navbar-nav flex-column flex-md-row justify-content-between align-items-center w-100"
+            >
+
+            <div class="">
+              <li class="nav-item d-none d-md-flex">
+                <a class="dropdown-item" href="/comprar-productos">Inicio</a>
+              </li>
+
+              <li class="nav-item d-md-none">
+                <a class="dropdown-item" href="/comprar-productos">Inicio</a>
+              </li>
+            </div>
+
+
+              <li class="nav-item d-none d-md-flex">
+                <a class="dropdown-item" href="/comprar-productos">Catalogo</a>
+              </li>
+
+              <li class="nav-item d-md-none">
+                <a class="dropdown-item" href="/comprar-productos">Catalogo</a>
+              </li>
+            </li> 
+            
+            <li class="nav-item d-none d-md-flex">
+              <a class="dropdown-item" href="/registrar-productos">Registrar Producto</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="dropdown-item" href="/registrar-productos">Registrar Producto</a>
+            </li>
+            </ul> 
+
+          </div>
+
+          <!-- <i class="bi bi-person-circle" alt="Perfil"></i>
+        <span id="profile-name">Nombre de Usuario</span>-->
+
+          <!--nombre del usuario activo -->
+          <div class="profile">
+            <button class="profile-button" id="profile-button">
+              <div
+                id="nombre-usuario-activo"
+                class="navbar-brand text-xl-center"
+              ></div>
+            </button>
+            <div id="profile-menu" class="profile-dropdown text-center">
+              <h5>Perfil</h5>
+              <ul class="profile-menu-list">
+                <li>
+                  <button
+                    class="btn btn-success text-center"
+                    id="change-password-button"
+                  >
+                    Cambiar Clave
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="btn btn-success text-center"
+                    id="logout-button"
+                  >
+                    Cerrar Sesión
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Presentacion-->
+    <div class="container-fluid bg-light py-5">
+      <h2 class="text-center">
+        <b>Gori</b><i class="bi bi-cart-dash">Gestion</i>
+      </h2>
+    </div>
+    
+
+    
+    <!--Gestion productos-->
+    <div class="container">
+      <h2 class="text-center">Productos Disponibles</h2>
+      <div class="productosDisponibles">
+        <table class="table">
+          <thead id="productos-detalles">
+         
+          </thead>
+          <tbody id="productos-container">
+            <!-- Aquí se insertarán las filas de productos dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+    <!-- Modal para editar producto -->
+    <div class="modal fade" id="editModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Editar Producto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="editProductForm">
+          <div class="form-group">
+            <label for="productName">Nombre del Producto</label>
+            <input type="text" class="form-control" id="productName" required>
+          </div>
+          <div class="form-group">
+            <label for="productCode">Código del Producto</label>
+            <input type="text" class="form-control" id="productCode" required>
+          </div>
+          <div class="form-group">
+            <label for="productPrice">Precio del Producto</label>
+            <input type="number" class="form-control" id="productPrice" required>
+          </div>
+          <input type="hidden" id="productId">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="saveChanges">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <!-- Modal de Eliminación -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel">Confirmar Eliminación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Estás seguro de que deseas eliminar este producto?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-danger" id="confirmDelete">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!--pie-->
+    <footer>
+      <div class="container-fluid py-4">
+        <div class="row">
+          <div class="text-center">
+            <h2><b>Gori</b><i class="bi bi-cart-dash">Gestion</i></h2>
+            <p>Contactanos y visita nuestras redes sociales</p>
+          </div>
+
+          <!--columnas pie-->
+          <div class="col-md-6 text-center">
+            <div><h4>Contactos</h4></div>
+            <div>
+              <i class="bi bi-whatsapp"></i
+              ><a class="text-decoration-none" href=""> +58 000-000.00.00</a>
+            </div>
+            <div>
+              <i class="bi bi-telegram"></i
+              ><a class="text-decoration-none" href=""> +58 000-000.00.00</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <div><h4>Redes Sociales</h4></div>
+            <div>
+              <i class="bi bi-facebook"></i
+              ><a class="text-decoration-none" href=""> Gori-Shop</a>
+            </div>
+            <div>
+              <i class="bi bi-instagram"></i
+              ><a class="text-decoration-none" href=""> @Gori-Shop</a>
+            </div>
+          </div>
+        </div>
+        <p class="text-center">©2025 Gori-Shop</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/gestionar.js" type="module"></script>
+</body>
+  </body>
+</html>

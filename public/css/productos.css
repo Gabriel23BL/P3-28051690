@@ -1,0 +1,137 @@
+body {
+    background-color: #e2e1e2;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+
+.container-fluid {
+    background-color: rgb(13, 253, 193);
+    max-height: 600px;
+    max-width: auto;
+    margin: 0 auto;
+ 
+}
+
+.card-img-top {
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+#img-carrito {
+    max-width: 65px;
+    max-height: 50px;
+
+
+}
+/*carrito*/
+
+
+
+.cart-dropdown {
+    display: none; 
+    border: 3px solid rgb(13, 253, 193);
+    padding: 10px;
+    position: absolute;
+    background-color: #e2e1e2;
+    z-index: 1000;
+    width: 280px;
+    border-radius: 10px;
+}
+.remove-item {
+    background-color: red; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    border: 3px solid white;
+    border-radius: 10px; /* Esquinas redondeadas para el botón de eliminar */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+.remove-item:hover {
+    border: 3px solid white;
+    background-color: darkred; /* Cambiar a un rojo más oscuro al pasar el mouse */
+}
+
+.cart {
+    position: relative; /* Para que el menú se posicione correctamente */
+}
+
+.cart img {
+    vertical-align: middle; /* Alinear la imagen con el texto */
+}
+.cotenedor-carrito {
+    
+    border-bottom: 1px solid rgb(13, 253, 193);
+}
+
+.cart {
+    position: relative; 
+}
+
+#cart-button {
+    background-color: #e2e1e2;
+    border: 3px solid white;
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer; 
+}
+#cart-button:hover {
+    background-color: rgb(13, 253, 193);
+
+}
+
+#cart-button i {
+    width: 70%;
+    height: auto; 
+     
+}
+#item-count {
+    color: red;
+}
+.version-select {
+    margin-bottom: 5px;
+}
+
+/*perfil*/
+
+.profile-dropdown {
+    display: none; 
+    border: 3px solid rgb(13, 253, 193);
+    padding: 10px;
+    position: absolute;
+    background-color: #e2e1e2;
+    z-index: 1000;
+    width: 125px; 
+    
+    border-radius: 10px; 
+}
+
+.profile-button {
+    background: none;
+    border: none; 
+    cursor: pointer;
+}
+.profile-menu-list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+}
+
+.profile-menu-list li {
+    margin: 5px 0;
+}
+
+.profile-menu-list button {
+    max-width: 130px; 
+    width: 100%; 
+    padding: 10px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer; 
+}
