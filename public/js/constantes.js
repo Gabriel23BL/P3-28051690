@@ -1,2 +1,1 @@
-//export const direccionLocal = 'https://gabriel-7aco.onrender.com';
-export const direccionLocal = 'http://localhost:2525';
+export const direccionLocal = 'https://p3-28051690.onrender.com';
