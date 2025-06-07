@@ -160,4 +160,20 @@ body {
   .circulo-login1 {
     box-shadow: 0px 0px 40px 5px #e28ba8;
   }
-}
+
+ /** pie de pagina **/
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+  }
+
+  footer {
+    margin-top: auto; /* Esto empuja el footer hacia el fondo */
+  }
+ }
